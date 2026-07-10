@@ -1,0 +1,25 @@
+---
+
+server:
+  port: 8081
+
+spring:
+  profiles: dev
+#  三个杠，代表分割
+---
+
+server:
+  port: 8082
+
+spring:
+  profiles: test
+---
+server:
+  port: 8083
+
+spring:
+  profiles: pro
+---
+spring:
+  profiles:
+    active: pro
